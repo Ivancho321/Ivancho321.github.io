@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    padding: 0
+}
+
+main{
+    flex: 1;
+    font-size: large;
+    line-height: 25px;
+    padding-left: 30px;
+    margin-right: 180px;
+}
+
+header{
+    position: fixed;
+    background-color: rgb(10, 6, 59);
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+ul li{
+    margin-bottom: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3 ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+header h1{
+    margin-left: 25px;
+    color: white;
+}
+
+main img{
+    box-shadow: 0 4px 8px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(10, 6, 59);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    z-index: 0;
+}
+
+div{
+    scroll-margin-top: 100px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.indice{
+    display: flex;
+    text-align: center;
+    gap: 320px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.indice ul{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.anuncios{
+    z-index: 1;
+    position: fixed;        
+    top: 100px;             
+    right: 0px;             
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;              
+    padding: 0;
+}
+
+ h4{
+    display: inline;
+}
