@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    padding: 0
+}
+
+main {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 2%;
+    margin-right: 15%; /* relativo al ancho */
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-right: 0;
+    }
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(10, 6, 59);
+    padding: 15px 30px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+ul li{
+    margin-bottom: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3 ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+header h1{
+    margin-left: 25px;
+    color: white;
+}
+
+main img{
+    box-shadow: 0 4px 8px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(10, 6, 59);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    z-index: 0;
+}
+
+div{
+    scroll-margin-top: 100px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;  /* centra horizontal */
+    align-items: center;      /* centra vertical dentro del contenedor */
+    margin: 20px auto;        /* centrado automático */
+    width: 100%;
+}
+
+.img img {
+    width: 90%;        /* ocupa el 90% disponible */
+    max-width: 400px;  /* no se deforma en pantallas grandes */
+    height: auto;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* logo a la izq, links después */
+    gap: 50px; /* espacio entre logo y links */
+}
+
+
+.menu h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;  /* centra los links en su bloque */
+    flex: 1;                  /* ocupa todo el espacio disponible */
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.menu ul li a:hover {
+    transform: scale(1.1);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.anuncios {
+    position: fixed;
+    top: 100px;   /* arranca debajo del header */
+    right: 10px;  /* un poco separado del borde */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anuncios img {
+    wwidth: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .anuncios {
+        display: none;
+    }
+}
