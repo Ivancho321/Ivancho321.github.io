@@ -12,11 +12,6 @@ main {
     margin-right: 15%; /* relativo al ancho */
 }
 
-@media (max-width: 768px) {
-    main {
-        margin-right: 0;
-    }
-}
 
 
 header {
@@ -90,6 +85,7 @@ div{
 }
 
 
+
 .menu h1 {
     margin: 0;
     color: white;
@@ -97,11 +93,13 @@ div{
     flex-shrink: 0;
 }
 
+
 .menu ul {
     display: flex;
-    justify-content: center;  /* centra los links en su bloque */
-    flex: 1;                  /* ocupa todo el espacio disponible */
-    gap: 40px;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;   /* 👈 permite que salte a otra línea */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -134,12 +132,12 @@ div{
 }
 
 .anuncios img {
-    wwidth: 150px;
+    width: 150px;
     max-width: 100%;
     height: auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 750px){
     .anuncios {
         display: none;
     }
